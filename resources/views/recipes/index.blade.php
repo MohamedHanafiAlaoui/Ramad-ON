@@ -17,13 +17,30 @@
             </div>
         @endif
 
+        <!-- Category Filter (server-side) -->
+        <div class="bg-[#1A1A2E] rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-xl font-semibold text-[#FFD700] mb-4">Filtrer par catégorie</h2>
+            <form method="GET" action="{{ route('recipes.index') }}">
+                <select
+                    name="category"
+                    id="category"
+                    class="w-full bg-[#2C3E50] text-white px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
+                    onchange="this.form.submit()"
+                >
+                    <option value="">Toutes les catégories</option>
+                    <option value="Soupes" {{ request('category') == 'Soupes' ? 'selected' : '' }}>Soupes</option>
+                    <option value="Boissons" {{ request('category') == 'Boissons' ? 'selected' : '' }}>Boissons</option>
+                    <option value="Recettes" {{ request('category') == 'Recettes' ? 'selected' : '' }}>Recettes</option>
+                </select>
+            </form>
+        </div>
+
         <!-- Recipe List -->
-        <div class="space-y-4">
-            @foreach ($recipes as $recipe)
+        <div class="space-y-4" id="recipe-list">
+            @forelse ($recipes as $recipe)
                 <div class="bg-[#1A1A2E] rounded-lg shadow-lg p-6 hover-scale transition-transform">
                     <h5 class="text-xl font-semibold text-[#FFD700] mb-2">{{ $recipe->title }}</h5>
-                    <!-- Recipe Description (Optional) -->
-                    <!-- <p class="text-gray-400 mb-4">{{ Str::limit($recipe->description, 100) }}</p> -->
+                    <p class="text-gray-400 mb-4">{{ $recipe->category }}</p> <!-- Display category -->
 
                     <!-- Action Buttons -->
                     <div class="flex space-x-4">
@@ -42,7 +59,9 @@
                         </form>
                     </div>
                 </div>
-            @endforeach
+            @empty
+                <p class="text-gray-400">Aucune recette trouvée pour cette catégorie.</p>
+            @endforelse
         </div>
     </div>
 @endsection

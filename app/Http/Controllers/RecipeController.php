@@ -11,12 +11,18 @@ class RecipeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $recipes = Recipe::all();
+        $category = $request->query('category');
+
+        if ($category) {
+            $recipes = Recipe::where('category', $category)->get();
+        } else {
+            $recipes = Recipe::all();
+        }
 
         // Passer les données à la vue
-        return view('recipes.index', compact('recipes'));
+        return view('recipes.index', compact('recipes', 'category'));
     }
 
     /**

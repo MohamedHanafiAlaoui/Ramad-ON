@@ -18,8 +18,8 @@
     <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
         <!-- Card 1 -->
         <div class="bg-[#1A1A2E] rounded-lg shadow-lg p-6 hover-scale transition-transform">
-            <h5 class="text-xl font-semibold text-[#FFD700] mb-4">Total Users</h5>
-            <h2 class="text-5xl font-bold text-[#FFD700] mb-4">12,345</h2>
+            <h5 class="text-xl font-semibold text-[#FFD700] mb-4">total Experiences</h5>
+            <h2 class="text-5xl font-bold text-[#FFD700] mb-4">{{$totalExperiences}}</h2>
             <p class="text-gray-400">Users registered on the platform.</p>
         </div>
         <!-- Card 2 -->
@@ -30,8 +30,8 @@
         </div>
         <!-- Card 3 -->
         <div class="bg-[#1A1A2E] rounded-lg shadow-lg p-6 hover-scale transition-transform">
-            <h5 class="text-xl font-semibold text-[#FF6B6B] mb-4">Total Visits</h5>
-            <h2 class="text-5xl font-bold text-[#FF6B6B] mb-4">45,678</h2>
+            <h5 class="text-xl font-semibold text-[#FF6B6B] mb-4">total Recipes</h5>
+            <h2 class="text-5xl font-bold text-[#FF6B6B] mb-4">{{$totalExperiences}}</h2>
             <p class="text-gray-400">Visits during the Ramadan campaign.</p>
         </div>
     </div>

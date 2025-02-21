@@ -38,10 +38,9 @@
                     <label for="category" class="block text-lg font-semibold text-[#FFD700] mb-2">Catégorie</label>
                     <select id="category" name="category" class="w-full bg-[#2C3E50] text-white px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFD700]" required>
                         <option value="">Sélectionner une catégorie</option>
-                        <option value="recette">Recette</option>
-                        <option value="spirituel">Spirituel</option>
-                        <option value="astuce">Astuce</option>
-                        <option value="autre">Autre</option>
+                        <option value="Soupes">Soupes</option>
+                        <option value="Boissons">Boissons</option>
+                        <option value="Recettes">Recettes</option>
                     </select>
                 </div>
 
