@@ -122,6 +122,11 @@
         <div class="comments-list" id="comments-list">
             <h3>Commentaires publiés :</h3>
         </div>
+        @if ($Commentaires)
+            <?= var_dump($Commentaires);?>
+        @endif
+        @foreach($Commentaires as $vi)
+        @endforeach
     </div>
 
     <footer class="footer">
