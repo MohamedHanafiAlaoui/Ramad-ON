@@ -101,6 +101,6 @@ Les contributions sont les bienvenues ! Si vous souhaitez participer au projet, 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
-https://hanafimohamed510-1739962141008.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZjdiMDdmNTBlMWFjNDE4YmE5NjA3Nzk1OWIyMzliNzciLCJwIjoiaiJ9
+https://www.canva.com/design/DAGfwoxSgxY/9AQI41lxgfomFhmmyrGkwg/edit?utm_content=DAGfwoxSgxY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 **Bon Ramadan à tous et bonne contribution !** 🌙
